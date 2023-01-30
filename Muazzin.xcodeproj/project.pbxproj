@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4872D27429863E970052B315 /* MuazzinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D27329863E970052B315 /* MuazzinApp.swift */; };
-		4872D27629863E970052B315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D27529863E970052B315 /* ContentView.swift */; };
+		4872D27629863E970052B315 /* MazzinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D27529863E970052B315 /* MazzinView.swift */; };
 		4872D27829863E980052B315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4872D27729863E980052B315 /* Assets.xcassets */; };
 		4872D27C29863E980052B315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4872D27B29863E980052B315 /* Preview Assets.xcassets */; };
 		4872D28629863E980052B315 /* MuazzinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D28529863E980052B315 /* MuazzinTests.swift */; };
 		4872D29029863E980052B315 /* MuazzinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D28F29863E980052B315 /* MuazzinUITests.swift */; };
 		4872D29229863E980052B315 /* MuazzinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D29129863E980052B315 /* MuazzinUITestsLaunchTests.swift */; };
+		4872D2A129863EF70052B315 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872D2A029863EF70052B315 /* Settings.swift */; };
+		4872D2A329864E930052B315 /* metro-polis.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4872D2A229864E930052B315 /* metro-polis.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4872D27029863E970052B315 /* Muazzin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muazzin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4872D27329863E970052B315 /* MuazzinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuazzinApp.swift; sourceTree = "<group>"; };
-		4872D27529863E970052B315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4872D27529863E970052B315 /* MazzinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazzinView.swift; sourceTree = "<group>"; };
 		4872D27729863E980052B315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4872D27929863E980052B315 /* Muazzin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Muazzin.entitlements; sourceTree = "<group>"; };
 		4872D27B29863E980052B315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		4872D28B29863E980052B315 /* MuazzinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuazzinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4872D28F29863E980052B315 /* MuazzinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuazzinUITests.swift; sourceTree = "<group>"; };
 		4872D29129863E980052B315 /* MuazzinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuazzinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4872D2A029863EF70052B315 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4872D2A229864E930052B315 /* metro-polis.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "metro-polis.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				4872D27329863E970052B315 /* MuazzinApp.swift */,
-				4872D27529863E970052B315 /* ContentView.swift */,
+				4872D27529863E970052B315 /* MazzinView.swift */,
+				4872D29E29863EC60052B315 /* view */,
+				4872D2A429864E9F0052B315 /* font */,
 				4872D27729863E980052B315 /* Assets.xcassets */,
 				4872D27929863E980052B315 /* Muazzin.entitlements */,
 				4872D27A29863E980052B315 /* Preview Content */,
@@ -127,6 +133,30 @@
 				4872D29129863E980052B315 /* MuazzinUITestsLaunchTests.swift */,
 			);
 			path = MuazzinUITests;
+			sourceTree = "<group>";
+		};
+		4872D29E29863EC60052B315 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4872D29F29863ED30052B315 /* thirdTab */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4872D29F29863ED30052B315 /* thirdTab */ = {
+			isa = PBXGroup;
+			children = (
+				4872D2A029863EF70052B315 /* Settings.swift */,
+			);
+			path = thirdTab;
+			sourceTree = "<group>";
+		};
+		4872D2A429864E9F0052B315 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				4872D2A229864E930052B315 /* metro-polis.otf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4872D2A329864E930052B315 /* metro-polis.otf in Resources */,
 				4872D27C29863E980052B315 /* Preview Assets.xcassets in Resources */,
 				4872D27829863E980052B315 /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4872D27629863E970052B315 /* ContentView.swift in Sources */,
+				4872D2A129863EF70052B315 /* Settings.swift in Sources */,
+				4872D27629863E970052B315 /* MazzinView.swift in Sources */,
 				4872D27429863E970052B315 /* MuazzinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
